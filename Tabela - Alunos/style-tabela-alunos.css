@@ -1,0 +1,60 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+.center { align-items: center; display: flex; justify-content: center;}
+
+.dimensions { min-height: 100vh; width: 100%; }
+
+body {
+    background-color: #19181D;
+
+    color: #F1F3FF;
+}
+
+main { flex-direction: column; gap: 20px; }
+
+.mainTable {
+    border-collapse: collapse;
+
+    text-align: center;
+
+    width: 820px;
+}
+
+    .mainTable caption { margin-bottom: 20px; }
+
+    .mainTable thead { background-color: #000; }
+
+    .mainTable thead th { font-size: 14px; padding: 10px; }
+
+    .mainTable tbody tr:nth-child(odd) { background-color: #26252B; }
+    .mainTable tbody tr:nth-child(even) { background-color: #2E2E36; }
+
+    .mainTable tbody td { padding: 14px; }
+
+a { color: #F1F3FF; font-size: 18px; text-decoration: none; }
+
+    a:hover { text-decoration: underline;}
+
+.approved { background-color: #C8EFCD; color: #274629; padding: 8px 10px; }
+
+.recovery { background-color: #FFEC9E; color: #745D1F; padding: 8px 10px; }
+
+.disapproved { background-color: #FFC7CA; color: #660B15; padding: 8px 10px; }
+
+.observations {
+    border-collapse: collapse;
+
+    position: fixed;
+
+    text-align: center;
+
+    top: 20px;
+
+    width: 320px;
+}
+
+.observations caption { margin-bottom: 8px; }
+
+.observations thead { background-color: #8F8989; }
+
+.observations tr, .observations td { border: 2px solid #C6C6C6; padding: 2px 0; }
